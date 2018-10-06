@@ -52,8 +52,9 @@ cd ml-latest-small
 
 
 ```
-Give examples
+Screenshots
 ```
+![Screenshot](Images/Example_Step1.JPG?raw=true "Step1")
 
 ### Installing
 
