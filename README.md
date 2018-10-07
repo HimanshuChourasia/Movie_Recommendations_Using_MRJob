@@ -103,7 +103,7 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Versioning
 
-We use [SemVer](https://git-scm.com/) for versioning. For the versions available, see the [tags on this repository](https://github.com/HimanshuChourasia/Movie_Recommendations_Using_MRJob/tags). 
+We use [Git](https://git-scm.com/) for versioning. For the versions available, see the [tags on this repository](https://github.com/HimanshuChourasia/Movie_Recommendations_Using_MRJob/tags). 
 
 ## Authors
 
