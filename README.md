@@ -56,53 +56,46 @@ Screenshots
 ```
 ![Screenshot](Images/Example_Step1.JPG?raw=true "Step1")
 
-### Installing
+### Running the Code
 
-A step by step series of examples that tell you how to get a development env running
+1. After Installation , run the following code:
+* Python csv_dat.py
 
-Say what the step will be
 
-```
-Give the example
-```
+This will create dat files for movies.dat & ratings.dat
 
-And repeat
 
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+For running MRJob for movie recommendations , create the following .mrjob.conf file on AWS EC2 linux Instance.
+run “nano ~/.mrjob.conf” in command line
+
+
+runners:
+
+	    emr:
+      
+	        bootstrap:
+          
+	        - sudo yum install -y python27-numpy
+          
+	        - sudo yum install -y python27-scipy
+          
+	        core_instance_type: m3.xlarge
+          
+	        num_core_instances: 5
+          
+	        aws_access_key_id: [your access key id]
+          
+	        aws_secret_access_key: [your secret access key]
+
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Python](https://www.python.org/) - Implementation programming language for MapReduce/
+* [MRJob](https://pythonhosted.org/mrjob/index.html) - Framework for Mapreduce in Python
+
 
 ## Contributing
 
@@ -110,7 +103,7 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](https://git-scm.com/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Authors
 
